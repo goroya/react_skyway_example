@@ -5,14 +5,26 @@
   "private": true,
   "dependencies": {
     "hark": "^1.1.5",
+    "history": "^4.6.3",
+    "material-ui": "^0.18.4",
+    "openlayers": "^4.2.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "next",
+    "react-tap-event-plugin": "^2.0.1",
+    "redux": "^3.7.1",
+    "redux-logger": "^3.0.6",
     "skyway-peerjs": "^0.4.0",
     "webrtc-adapter": "^4.0.2"
   },
   "devDependencies": {
     "eslint": "^4.1.1",
     "gh-pages": "^1.0.0",
+    "husky": "^0.14.1",
+    "lint-staged": "^4.0.0",
+    "prettier": "^1.5.1",
     "react-scripts": "1.0.7"
   },
   "scripts": {

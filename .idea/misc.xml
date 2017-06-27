@@ -6,7 +6,7 @@
     <option name="name" value="default" />
   </component>
   <component name="JavaScriptSettings">
-    <option name="languageLevel" value="JSX" />
+    <option name="languageLevel" value="FLOW" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="ruby-2.3.3-p222" project-jdk-type="RUBY_SDK" />
   <component name="WebPackConfiguration">
