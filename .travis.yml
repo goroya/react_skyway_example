@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+  - node
+
+before_script:
+  - yarn install
+
+script:
+  - echo "Deploy"
+
+after_success:
+  - yarn run build
+  - firebase deploy --token $FIREBASE_TOKEN
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+notifications:
+  slack:
+    secure: RBPj2RvBDz2AUds0ALt0qIKRgmavFYQs/fRC6rXQGyn3NiX+9g+1BIs77Cw8IwPPM0i7jOYcttLBio+MfXgoWmD30y84QBR1NEezThb/TdnNngsgpgJxahEwQ1LyYq7RXZJmWEogwVQUGG9l/n4Freot59KxOZt29avPu9UzDHWs9ZtPqeIgoNy2LEM9h0qnAS80GMUPWflzx/RH+t9VMirQKd6NoJ7oP6FywKltxgu/39KabMbBbEOxap3bhnappA9fCtcxoB07Txcn31+ij9zCu08GOT1cTdmMXOoVYiI2MfmHHqvr3fcnNK8pHos3GcalAmHp5Z1+GCzs9TwZ+fXU3QX7+qCCzX7cmqClnFBhxegIRQ93W2AC4CEURjmeQtcWeO/g0lDJoUW/a8QloMt3gZV+vDEVRgPeBVhsiHIc88cWxnrOe2NCQ0y99Wp1eHNj/IZIG0TWopZWMO/PykdanhQH6qH8H1SRsOoja8R/i2ulNJuXTJ2Z0HZXtBqIOuHAwuG4l+0HZmTubpVHOKxfAwz1iXPMicgmmmbQCP43vWrKOdIlXmhiaUmvuaE+Roz/fSXSf1vEMKaCBo8HZqNyNmtctY9vzgWTF5vsUzi8jGIiuOLJs/BOfVQjNMagZyXDbbrr5Ll6Rxw0mWdb4xAs9da+3NVRcpz0irABgYQ=
